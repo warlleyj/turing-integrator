@@ -6,10 +6,18 @@ from dateutil import parser
 from datetime import datetime, timezone
 
 # 1. Configurações
-author_url = "https://author-p120717-e1174076.adobeaemcloud.com"
-public_url_base = "https://portal.maplebear.com.br"
+#author_url = "https://author-p120717-e1174076.adobeaemcloud.com"
+#public_url_base = "https://portal.maplebear.com.br"
+#query_path = "/bin/querybuilder.json"
+#credentials = ("turing_user", "5DIzbK4@")
+
+###
+#author_url = "https://author-p120717-e1174076.adobeaemcloud.com" # prod
+author_url = "https://author-p120717-e1174077.adobeaemcloud.com" # homolog
+public_url_base = "https://publish-p120717-e1174077.adobeaemcloud.com" 
 query_path = "/bin/querybuilder.json"
-credentials = ("turing_user", "5DIzbK4@")
+credentials = ("turing_user_homolog", "8Kfnlo7%a#")
+###
 
 def isEvent(path):
     return '/content/dam/maple-bear/events' in path
