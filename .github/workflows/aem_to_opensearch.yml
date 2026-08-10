@@ -24,4 +24,5 @@ jobs:
       - name: Executar script Python
         env:
           API_TOKEN: ${{ secrets.API_TOKEN }}
+          KNOWLEDGE_HUB_API_KEY: ${{ secrets.KNOWLEDGE_HUB_API_KEY }}
         run: python aem_opensearch.py
