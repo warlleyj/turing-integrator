@@ -216,15 +216,15 @@ def main():
                             'descriptionFragment': proprieties.get('description', ''),
                             'eventType': proprieties.get('eventType', []),
                             'allDay': proprieties.get('allDay', False) == 'true',
-                            'buttonLink': proprieties.get('buttonLink', proprieties.get('local', '')),
+                            'buttonLinkV2': proprieties.get('buttonLinkV2', ''),
                             'initialDate': converter_data(proprieties.get('initialDate', '')),
                             'finishDate': converter_data(proprieties.get('finishDate', ''))
                         }
 
                         spPost['m'] = f"<span>{str(proprieties.get('description', ''))}.</span>"
 
-                        if proprieties.get('buttonLink', ''):
-                            spPost['m'] += f"<span>link para acessar evento: {str(proprieties.get('buttonLink', ''))}.</span>"
+                        if proprieties.get('buttonLinkV2', ''):
+                            spPost['m'] += f"<span>link para acessar evento: {str(proprieties.get('buttonLinkV2', ''))}.</span>"
 
                         # Obtém e formata a data inicial
                         initial_date_str = proprieties.get('initialDate', '')
